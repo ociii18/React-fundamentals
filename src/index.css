@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@500;700&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+  --breakpoint-sm: 600px;
+  --breakpoint-md: 800px;
+  --breakpoint-large: 1000px;
+  --breakpoint-desktop: 1200px;
+
+
+  /* primary colors */
+
+       --color-primary: oklch(0.7004 0.182 171.11 / 50%);
+       --color-primary-50: oklch(0.7004 0.182 171.11 / 50%);
+       --color-primary-100: oklch(0.7004 0.182 171.11 / 100%);
+       --color-primary-dark: oklch(0.7004 0.182 171.11 / 100%);
+       --color-primary-dark-50: oklch(0 0.0242 85)
+          --color-accent: oklch(85% 0.1 130);
+          --color-dark: oklch(30% 0.05 260);
+          --color-light: oklch(95% 0.01 0);
+          
+
+          
+
+    /* secondary colors */
+
+  --color-accent-50: oklch(0.97 0.03 45);
+  --color-accent-100: oklch(0.97 0.03 45 / 100%);
+  --color-secondary: oklch(0.85 0.05 45);
+  --color-secondary-50: oklch(0.85 0.05 45 / 50%);
+  --color-secondary-100: oklch(0.85 0.05 45 / 100%);
+  --color-secondary-dark: oklch(0.75 0.07 45);
+  --color-secondary-dark-50: oklch(0.75 0.07 45 / 50%);
+  --color-secondary-dark-100: oklch(0.75 0.07 45 / 100%);
+
+} 
