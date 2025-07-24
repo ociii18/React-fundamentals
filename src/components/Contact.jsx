@@ -44,9 +44,9 @@ export default function ContactSection() {
               <h2 className="text-4xl font-bold text-gray-900 mb-8">Say Hello</h2>
             </div>
             <div className="space-y-8">
-              <ContactItem icon={<FiMapPin />} label="Address" value="Location KG 9 Ave, Kigali" />
-              <ContactItem icon={<FiMail />} label="Email" value="businesscafe@info.com" />
-              <ContactItem icon={<FiPhoneCall />} label="Phone" value="+250788183828" />
+              <ContactItem icon={<FiMapPin className='w-8 h-8 max-auto' />} label="Address" value="Location KG 9 Ave, Kigali" />
+              <ContactItem icon={<FiMail className='w-8 h-8 max-auto' />} label="Email" value="businesscafe@info.com" />
+              <ContactItem icon={<FiPhoneCall className='w-8 h-8 max-auto' />} label="Phone" value="+250788183828" />
             </div>
           </div>
 

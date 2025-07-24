@@ -2,32 +2,101 @@ import React from 'react';
 import { LuLayoutDashboard } from "react-icons/lu";
 
 const variantClasses = {
-  primary: ' hover:',
-  secondary: '-500 hover:bg-gray-600',
+  primary: 'text-teal-400 hover:text-teal-300 transition-colors duration-200',
+  secondary: 'text-black hover:text-teal-400 hover:bg-gray-100 transition-all duration-200',
 };
 
 export default function NavBar() {
   return (
-    <div className='flex justify-between items-center h-[50px] px-4 bg-primary-200 text-primary-100'>
-      <div className='flex items-center gap-4 px-20'>
-        <LuLayoutDashboard className='text-2xl ' />
-        <h1 className='font-bold text-xl text-black'>Business</h1>
-        <h1 className='font-bold text-xl  '>Cafe</h1>
+    <nav className="w-full max-w-full bg-primary-200 text-primary-100 px-3 sm:px-4 lg:px-8 py-3 sm:py-4 shadow-sm overflow-x-hidden">
+      <div className="max-w-7xl mx-auto w-full max-w-full overflow-hidden">
+        {/* Main navbar container */}
+        <div className="flex justify-between items-start sm:items-center w-full max-w-full min-w-0 overflow-hidden">
+          {/* Logo Section */}
+          <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0 min-w-0 overflow-hidden">
+            <LuLayoutDashboard className="text-lg sm:text-xl lg:text-2xl text-teal-400 flex-shrink-0" />
+            <div className="flex items-center min-w-0 overflow-hidden">
+              <h1 className="font-bold text-sm sm:text-base lg:text-lg text-black truncate">Business</h1>
+              <h1 className="font-bold text-sm sm:text-base lg:text-lg text-teal-400 ml-1 truncate">Cafe</h1>
+            </div>
+          </div>
+
+          {/* Navigation Links */}
+          <div className="flex-shrink-0">
+            {/* Desktop Navigation - Horizontal */}
+            <ul className="hidden md:flex items-center gap-1 lg:gap-2 font-semibold">
+              <li>
+                <a 
+                  href="/" 
+                  className={`${variantClasses.primary} px-2 lg:px-3 py-2 rounded-md text-xs lg:text-sm whitespace-nowrap`}
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="/space" 
+                  className={`${variantClasses.secondary} px-2 lg:px-3 py-2 rounded-md text-xs lg:text-sm whitespace-nowrap`}
+                >
+                  Space
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="/about" 
+                  className={`${variantClasses.secondary} px-2 lg:px-3 py-2 rounded-md text-xs lg:text-sm whitespace-nowrap`}
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="/contact" 
+                  className={`${variantClasses.secondary} px-2 lg:px-3 py-2 rounded-md text-xs lg:text-sm whitespace-nowrap`}
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+
+            {/* Mobile Navigation - Vertical */}
+            <ul className="md:hidden flex flex-col items-end gap-1 font-medium text-right">
+              <li>
+                <a 
+                  href="/" 
+                  className={`${variantClasses.primary} block px-2 py-1 rounded text-xs whitespace-nowrap`}
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="/space" 
+                  className={`${variantClasses.secondary} block px-2 py-1 rounded text-xs whitespace-nowrap`}
+                >
+                  Space
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="/about" 
+                  className={`${variantClasses.secondary} block px-2 py-1 rounded text-xs whitespace-nowrap`}
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="/contact" 
+                  className={`${variantClasses.secondary} block px-2 py-1 rounded text-xs whitespace-nowrap`}
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <ul className='flex gap-4'> 
-        <li>
-          <a href="/" className={`${variantClasses.primary} text-teal-400 px-4 py-2 `}>Home</a>
-        </li>
-        <li>
-          <a href="/about" className={`${variantClasses.secondary} text-black px-4 py-2 `}>Space</a>
-        </li>
-        <li>
-          <a href="/blog" className={`${variantClasses.secondary} text-black px-4 py-2 rounded`}>About</a>
-        </li>
-        <li>
-          <a href="/contact" className={`${variantClasses.secondary} text-black px-4 py-2 rounded`}>Contact</a>
-        </li>
-      </ul>
-    </div>
+    </nav>
   );
 }
