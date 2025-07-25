@@ -12,9 +12,13 @@
   /* primary colors */
 
        --color-primary: oklch(0.7004 0.182 171.11 / 50%);
-       --color-primary-50: oklch(0.7004 0.182 171.11 / 50%);
+       --color-primary-50: oklch(0.6045 0.1074 183.38);
+       --color-primary-200: oklch(0.9846 0.0017 247.84);
+       --color-primary-300: oklch(1 0 0);
+       --color-primary-400: oklch(0.8829 0.1074 183.38);
        --color-primary-100: oklch(0.7004 0.182 171.11 / 100%);
        --color-primary-dark: oklch(0.7004 0.182 171.11 / 100%);
+       --color-primary-m:oklch(0.9209 0.1993 159.46)
        --color-primary-dark-50: oklch(0 0.0242 85)
           --color-accent: oklch(85% 0.1 130);
           --color-dark: oklch(30% 0.05 260);

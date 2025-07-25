@@ -44,9 +44,9 @@ function App() {
           </h2>
 
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight mb-4">
-            <span className="block text-[oklch(65%_0.23_180)]">Professional, Creative,</span>
+            <span className="block text-primary-50">Professional, Creative,</span>
             <div className="text-white text-2xl md:text-3xl lg:text-4xl">
-            <span className="block text-white">Flexible, Scalable </span>
+            <span className="block text-primary-300">Flexible, Scalable </span>
             <span className="block text-[oklch(65%_0.23_180)]">Workspace</span>
             </div>
           </h1>
@@ -57,7 +57,7 @@ function App() {
             office today!
           </p>
 
-          <button className="bg-teal-400 hover:bg-teal-400 text-white font-semibold px-6 py-3 rounded shadow-md transition">
+          <button className="bg-teal-400 hover:bg-primary-50 text-primary-30 font-semibold px-6 py-3 rounded shadow-md transition">
             Explore
           </button>
         </div>

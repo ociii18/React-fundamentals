@@ -8,7 +8,7 @@ const variantClasses = {
 
 export default function NavBar() {
   return (
-    <nav className="w-full max-w-full bg-primary-200 text-primary-100 px-3 sm:px-4 lg:px-8 py-3 sm:py-4 shadow-sm overflow-x-hidden">
+    <nav className="w-full max-w-full fiexed top-0 left-0 right-0 z-50 bg-primary-200 text-primary-100 px-3 sm:px-4 lg:px-8 py-3 sm:py-4 shadow-sm overflow-x-hidden">
       <div className="max-w-7xl mx-auto w-full max-w-full overflow-hidden">
         {/* Main navbar container */}
         <div className="flex justify-between items-start sm:items-center w-full max-w-full min-w-0 overflow-hidden">

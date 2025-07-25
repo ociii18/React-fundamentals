@@ -29,7 +29,7 @@ const Input = ({
           value={value}
           onChange={onChange}
           placeholder={placeholder}
-          className={'px-4 py-2 rounded-md border-2 ${variantClasses[variant]} ${className}'} 
+          className={`px-4 py-2 rounded-md border-2 ${variantClasses[variant]} ${className}`} 
            />
         </div>
   );

@@ -84,7 +84,7 @@ export default function Tochoose() {
 
     
     {[...Array(3)].map((_, index) => (
-      <div key={`mobile-last-${index}`} className="flex flex-col justify-center items-center bg-teal-100 p-6 rounded-lg">
+      <div key={`mobile-last-${index}`} className="flex flex-col justify-center items-center bg- p-6 rounded-lg">
         <div className="mx-auto text-center rounded-full bg-primary-50 p-4 mb-4">
           <RxLayers className="text-3xl" />
         </div>
@@ -115,14 +115,14 @@ export default function Tochoose() {
             ))}
           </div>
 
-{/*           
+          
           <div className="flex justify-center items-center h-full">
             <img
               src="https://offloadmedia.feverup.com/secretnyc.co/wp-content/uploads/2019/02/10124816/patent-pending-1.jpg"
               alt="Workspace"
               className="h-[100%] w-[100%] object-cover rounded-lg"
             />
-          </div> */}
+          </div>
 
           
           <div className="space-y-6 ml-10 pl-20">

@@ -34,7 +34,15 @@ export default function ContactSection() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-50 py-16 px-4 sm:px-6 lg:px-8" style={{
+  backgroundImage: 'url(https://img.freepik.com/free-vector/worldwide-connection-gray-background-illustration-vector_53876-76827.jpg)',
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
+  backgroundColor: '#f8f9fa',
+  backgroundAttachment: 'fixed',
+}}>
+
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           
@@ -57,8 +65,16 @@ export default function ContactSection() {
               <h2 className="text-4xl font-bold text-gray-900">Send a Message</h2>
             </div>
 
-            <form onSubmit={handleSubmit} className="space-y-8">
-              <InputField value={name} setValue={setName} placeholder="Name" error={errors.name} />
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <InputField 
+              value={name} 
+              setValue={setName} 
+              placeholder="Name" 
+              variant={errors.name ? "error" : "default"} 
+              // error={errors.name} 
+              className={`${errors.name ? "focus:ring-red-500" : ""}`} 
+              />
+              {errors.name && <p className="text-sm text-red-600">{errors.name}</p>}
               <InputField value={email} setValue={setEmail} placeholder="Email" error={errors.email} />
               <InputField value={subject} setValue={setSubject} placeholder="Subject" error={errors.subject} />
               <TextAreaField value={message} setValue={setMessage} placeholder="Your Message" error={errors.message} />
